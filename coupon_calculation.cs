@@ -109,9 +109,13 @@ class CouponCalculatorFactory
     }
 }
 
+class InvalidCouponTypeException : Exception
+{    
+}
+
 interface ICouponCalculator
 {
-    void Apply(Order order);
+    void Apply(Order order, Coupon coupon);
 }
 
 class WholeOrderFixedCalculator : ICouponCalculator
