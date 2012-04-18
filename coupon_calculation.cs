@@ -18,8 +18,7 @@ class Product
 class Order
 {
     public List<OrderLine> OrderLines { get; set; }
-    public List<Discount> Discounts { get; set; }
-    public List<Gift> Gifts { get; set; }
+    public List<Discount> Discounts { get; set; }    
 
     public decimal Total
     {
