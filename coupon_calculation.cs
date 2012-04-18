@@ -70,7 +70,8 @@ class Coupon
 
 enum CouponType
 {
-    WholeOrder,
+    WholeOrderFixed,
+    WholeOrderPercentage,
     SpecificProduct,
     SpecificSupplier,
     SpecificCategory,
